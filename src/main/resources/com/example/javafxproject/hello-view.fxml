@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxproject.HelloController">
+   <children>
+      <GridPane prefHeight="462.0" prefWidth="705.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.20001220703125" minWidth="10.0" prefWidth="17.200016021728516" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.3999900817871" minWidth="10.0" prefWidth="183.99999694824223" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="460.80000305175787" minWidth="10.0" prefWidth="202.20007934570307" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.1999572753906" minWidth="0.0" prefWidth="105.60004882812501" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.20001220703125" minWidth="7.99993896484375" prefWidth="132.79995117187502" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.20001220703125" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="112.59998168945313" minHeight="0.0" prefHeight="1.2000137567520142" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="291.999986243248" minHeight="10.0" prefHeight="40.799990844726565" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="421.00000762939453" minHeight="10.0" prefHeight="232.79999389648438" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="353.8000259399414" minHeight="3.6000122070312273" prefHeight="49.600006103515625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="187.20001831054685" minHeight="10.0" prefHeight="46.200030517578114" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="143.4000305175781" minHeight="10.0" prefHeight="64.5999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="143.4000305175781" minHeight="10.0" prefHeight="64.5999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="84.99997558593748" minHeight="10.0" prefHeight="36.99997558593748" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="classView" prefHeight="386.0" prefWidth="364.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="1" GridPane.rowSpan="5">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="158.3999786376953" text="Name" />
+                <TableColumn fx:id="surname" minWidth="0.0" prefWidth="116.0" text="Surname" />
+                  <TableColumn fx:id="points" prefWidth="248.0" text="Points" />
+              </columns>
+            </TableView>
+            <ComboBox fx:id="choseClass" prefWidth="150.0" promptText="Chose Class" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="add" mnemonicParsing="false" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="namefidle" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="surnamefidle" prefHeight="21.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="markfidel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="delete" mnemonicParsing="false" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="nameOfCsv" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="readCsv" mnemonicParsing="false" text="Read CSF" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Button fx:id="writeCsv" mnemonicParsing="false" text="Write CSV" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
